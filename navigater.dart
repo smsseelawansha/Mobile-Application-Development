@@ -1,8 +1,8 @@
 import 'package:budget_buddy/pages/add.dart';
 import 'package:budget_buddy/pages/home/home.dart';
-import 'package:budget_buddy/pages/profile.dart';
 import 'package:budget_buddy/pages/home/stats.dart';
-import 'package:budget_buddy/pages/todo/task.dart';
+import 'package:budget_buddy/pages/profile.dart';
+import 'package:budget_buddy/pages/todo/alarm.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,7 +15,7 @@ class Bottom extends StatefulWidget {
 
 class _BottomState extends State<Bottom> {
   int index_color = 0;
-  List pages = [Home(), Stats(), TaskHome1(), ProfilePage()];
+  List pages = [Home(), Stats(), Alarm(), ProfilePage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
